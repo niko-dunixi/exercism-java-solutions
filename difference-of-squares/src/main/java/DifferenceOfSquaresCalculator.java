@@ -10,7 +10,11 @@ public class DifferenceOfSquaresCalculator {
     }
 
     public int computeSumOfSquaresTo(int number) {
-        throw new UnsupportedOperationException("Not yet implemented."); // FIXME: via TDD
+        int sum = 0;
+        for (int i = 1; i <= number; i++) {
+            sum += Math.pow(i, 2);
+        }
+        return sum;
     }
 
     public int computeDifferenceOfSquares(int number) {
