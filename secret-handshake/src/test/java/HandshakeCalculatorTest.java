@@ -1,5 +1,5 @@
-import org.junit.Ignore;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import static java.util.Arrays.asList;
@@ -44,7 +44,7 @@ public class HandshakeCalculatorTest {
     public void testThatInput8YieldsAJump() {
         assertEquals(
                 singletonList(Signal.JUMP),
-               handshakeCalculator.calculateHandshake(8));
+                handshakeCalculator.calculateHandshake(8));
     }
 
     @Ignore("Remove to run test")
@@ -60,7 +60,7 @@ public class HandshakeCalculatorTest {
     public void testAnInputThatYieldsTwoReversedActions() {
         assertEquals(
                 asList(Signal.DOUBLE_BLINK, Signal.WINK),
-               handshakeCalculator.calculateHandshake(19));
+                handshakeCalculator.calculateHandshake(19));
     }
 
     @Ignore("Remove to run test")
