@@ -18,6 +18,6 @@ public class DifferenceOfSquaresCalculator {
     }
 
     public int computeDifferenceOfSquares(int number) {
-        throw new UnsupportedOperationException("Not yet implemented."); // FIXME: via TDD
+        return computeSquareOfSumTo(number) - computeSumOfSquaresTo(number);
     }
 }
